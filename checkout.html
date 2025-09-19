@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>A Viagem dos Sonhos</title>
+</head>
+
+<body>
+  <header class="container-fluid p-2 bg-danger text-center">
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid bg-danger">
+        <a class="navbar-brand text-light fw-bolder" href="/index.html"><img src="/img/logo/logo.png" width="150px" alt="logo da agência de viagens"></a>
+        <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end bg-danger" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#pacotes">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#taxas">Taxas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a href="/checkout.html" class="nav-link"><i class="bi bi-cart3"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <main>
+      <div class="py-5 text-center"> <img class="d-block mx-auto mb-4" src="/img/logo/logo-checkout.png" alt="" width="250">
+        <h1 class="h2">Finalizar compra</h1>
+        <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3"> <span class="text-danger">Meu carrinho</span> <span class="badge bg-danger rounded-pill">3</span> </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Product name</h6> <small class="text-body-secondary">Brief description</small>
+              </div> <span class="text-body-secondary">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Second product</h6> <small class="text-body-secondary">Brief description</small>
+              </div> <span class="text-body-secondary">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Third item</h6> <small class="text-body-secondary">Brief description</small>
+              </div> <span class="text-body-secondary">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6> <small>EXAMPLECODE</small>
+              </div> <span class="text-success">−$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between"> <span>Total (USD)</span> <strong>$20</strong> </li>
+          </ul>
+          <form class="card p-2">
+            <div class="input-group"> <input type="text" class="form-control" placeholder="Promo code"> <button type="submit" class="btn btn-secondary">Redeem</button> </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Dados pessoais</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6"> <label for="firstName" class="form-label">Nome</label> <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nome é obrigatório.
+                </div>
+              </div>
+              <div class="col-sm-6"> <label for="lastName" class="form-label">Sobrenome</label> <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Sobrenome é obrigatório.
+                </div>
+              </div>
+              <div class="col-12"> <label for="username" class="form-label">Usuário</label>
+                <div class="input-group has-validation"> <span class="input-group-text">@</span> <input type="text" class="form-control" id="username" placeholder="Username" required>
+                  <div class="invalid-feedback">
+                    Seu usuário é obrigatório.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12"> <label for="email" class="form-label">E-mail <span class="text-body-secondary">(Opcional)</span></label> <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Por favor, digite um e-mail válido.
+                </div>
+              </div>
+              <div class="col-12"> <label for="address" class="form-label">Endereço de entrega</label> <input type="text" class="form-control" id="address" placeholder="Digite o endereço de entrega" required>
+                <div class="invalid-feedback">
+                  Por favor, digite o seu endereço.
+                </div>
+              </div>
+              <div class="col-12"> <label for="address2" class="form-label">Endereço de pagamento</label> <input type="text" class="form-control" id="address2" placeholder="Digite o endereço de cobrança"> </div>
+              <div class="col-md-5"> <label for="country" class="form-label">País</label> <select class="form-select" id="country" required>
+                  <option value="">Selecione seu país...</option>
+                  <option>Brasil</option>
+                  <option>Argentina</option>
+                  <option>Chile</option>
+                  <option>Paraguai</option>
+                  <option>Uruguai</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, selecione um país.
+                </div>
+              </div>
+              <div class="col-md-4"> <label for="state" class="form-label">Estado</label> <select class="form-select" id="state" required>
+                  <option value="">Selecione seu estado...</option>
+                  <option>Acre</option>
+                  <option>Alagoas</option>
+                  <option>Amapá</option>
+                  <option>Amazonas</option>
+                  <option>Bahia</option>
+                  <option>Ceará</option>
+                  <option>Distrito Federal</option>
+                  <option>Espírito Santo</option>
+                  <option>Goiás</option>
+                  <option>Maranhão</option>
+                  <option>Mato Grosso</option>
+                  <option>Mato Grosso do Sul</option>
+                  <option>Minas Gerais</option>
+                  <option>Pará</option>
+                  <option>Paraíba</option>
+                  <option>Paraná</option>
+                  <option>Pernambuco</option>
+                  <option>Piauí</option>
+                  <option>Rio de Janeiro</option>
+                  <option>Rio Grande do Norte</option>
+                  <option>Rio Grande do Sul</option>
+                  <option>Rondônia</option>
+                  <option>Roraima</option>
+                  <option>Santa Catarina</option>
+                  <option>São Paulo</option>
+                  <option>Sergipe</option>
+                  <option>Tocantins</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, selecione seu estado.
+                </div>
+              </div>
+              <div class="col-md-3"> <label for="zip" class="form-label">CEP</label> <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  CEP é obrigatório.
+                </div>
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="form-check"> <input type="checkbox" class="form-check-input" id="same-address"> <label class="form-check-label" for="same-address">O endereço de entrega é o mesmo que o meu endereço de cobrança. </label> </div>
+            <div class="form-check"> <input type="checkbox" class="form-check-input" id="save-info"> <label class="form-check-label" for="save-info">Salve essas informações para a próxima vez.</label> </div>
+            <hr class="my-4">
+            <h4 class="mb-3">Pagamento</h4>
+            <div class="my-3">
+              <div class="form-check"> <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required> <label class="form-check-label" for="credit">Cartão de crédito</label> </div>
+              <div class="form-check"> <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required> <label class="form-check-label" for="debit">Cartão de débito</label> </div>
+              <div class="form-check"> <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required> <label class="form-check-label" for="paypal">PayPal</label> </div>
+            </div>
+            <div class="row gy-3">
+              <div class="col-md-6"> <label for="cc-name" class="form-label">Nome do titular do cartão</label> <input type="text" class="form-control" id="cc-name" placeholder="" required> <small class="text-body-secondary">Nome completo como exibido no cartão</small>
+                <div class="invalid-feedback">
+                  Nome no cartão é obrigatório!
+                </div>
+              </div>
+              <div class="col-md-6"> <label for="cc-number" class="form-label">Número do cartão de crédito</label> <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  O número do cartão de crédito é obrigatório!
+                </div>
+              </div>
+              <div class="col-md-3"> <label for="cc-expiration" class="form-label">Validade</label> <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Validade é obrigatório!
+                </div>
+              </div>
+              <div class="col-md-3"> <label for="cc-cvv" class="form-label">CVV</label> <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Código de segurança é obrigatório!
+                </div>
+              </div>
+            </div>
+            <hr class="my-4"> <button class="w-100 btn btn-danger btn-lg" type="submit">Continuar para o pagamento</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+      <p class="mb-1">Viagem dos sonhos - 2025</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" class="astro-vvvwv3sm"></script>
+  <script src="checkout.js" class="astro-vvvwv3sm"></script>
+
+</body>
+<footer class="container-fluid bg-danger text-light p-2">
+  <p class="footer text-center">Desenvolvido por Jourdany Telemberg</p>
+</footer>
+
+</html>
